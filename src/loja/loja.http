@@ -1,0 +1,26 @@
+### List all products
+GET http://localhost:3000/loja
+
+### Get product by ID
+GET http://localhost:3000/loja/1
+
+### Create product
+POST http://localhost:3000/loja
+Content-Type: application/json
+
+{
+    "nome": "João bocao",
+    "preco": 30.25,
+    "estoque": 20
+}
+
+### Update product
+PATCH http://localhost:3000/loja/1
+Content-Type: application/json
+
+{
+    "preco": 124.99
+}
+
+### Delete product
+DELETE http://localhost:3000/loja/1
